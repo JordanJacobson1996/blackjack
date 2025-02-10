@@ -34,7 +34,7 @@ class Deck:
 #define hand class
 class Player:
     def __init__(self,pot):
-        self.all_card = []
+        self.all_cards = []
         self.wallet = 100
 
     def add_cards(self, new_cards):
@@ -50,6 +50,10 @@ class Player:
             self.wallet - amount
             pot += amount
             return(f"Pot is now {pot}")
+        
 
-player = Player(pot)
-print(player.bet(0.5, pot))
+        
+#define dealer class
+class Dealer:
+    def __init__(self):
+        self.all_cards = []
